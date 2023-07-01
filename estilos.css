@@ -1,0 +1,68 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.header {
+  height: 100vh !important;
+  background-image: url(img/fondo-minimercado-byw.png);
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+.header .logo-head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 15%;
+  padding-top: 40px !important;
+  margin-left: 150px !important;
+}
+.header .logo-head img {
+  width: 10vw;
+}
+.header .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 78%;
+  text-align: center;
+  color: red;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 1px black;
+  font-family: "Agdasima", sans-serif;
+  word-spacing: 20px;
+  letter-spacing: 10px;
+}
+.header .titulo h1 {
+  font-size: 100px;
+}
+.header .titulo h2 {
+  font-size: 70px;
+}
+.header .navegador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 7%;
+}
+.header .navegador ul {
+  list-style: none;
+}
+.header .navegador li {
+  display: inline;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 50px !important;
+}
+.header .navegador a {
+  text-decoration: none;
+  color: white;
+}
+.header .navegador a:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=estilos.css.map */
