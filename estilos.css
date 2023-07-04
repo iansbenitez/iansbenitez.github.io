@@ -170,8 +170,13 @@
   padding: 0 !important;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: clip !important;
+}
+
 .contenedor-boton {
-  height: 0.1%;
+  height: 100%;
   position: sticky;
   float: right;
   padding: 10px;
@@ -185,10 +190,16 @@
   .contenedor-boton {
     padding-right: 90px !important;
   }
+  .contenedor-boton img {
+    width: 70px;
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .contenedor-boton {
     padding-right: 120px !important;
+  }
+  .contenedor-boton img {
+    width: 60px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 575px) {
