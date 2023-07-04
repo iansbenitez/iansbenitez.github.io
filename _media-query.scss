@@ -1,5 +1,11 @@
-@mixin tablet {
-    @media screen and (max-width: 768px) {
+$breakpoints: (
+    sm: 540px,
+    md: 768px,
+    lg: 1024px
+);
+
+@mixin media-up($breakpoints) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoints)) {
         @content;
     }
 }
