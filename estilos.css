@@ -1,14 +1,8 @@
-* {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 .header {
   height: 100vh !important;
   background-image: url(img/fondo-minimercado-byw.png);
   background-size: cover;
   background-position: center;
-  background-color: black;
 }
 .header .logo-head {
   display: flex;
@@ -26,7 +20,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 78%;
+  height: 72%;
   text-align: center;
   color: red;
   text-transform: uppercase;
@@ -40,6 +34,14 @@
 }
 .header .titulo h2 {
   font-size: 70px;
+}
+.header .buscador {
+  height: 6%;
+  padding-bottom: 50px !important;
+}
+.header .buscador input {
+  border-radius: 50px;
+  text-indent: 10px;
 }
 .header .navegador {
   display: flex;
@@ -55,14 +57,153 @@
   display: inline;
   text-decoration: none;
   text-transform: uppercase;
-  padding-right: 50px !important;
+  padding: 0 20px !important;
+  background-color: darkred;
+  border-radius: 10px;
 }
 .header .navegador a {
   text-decoration: none;
   color: white;
 }
 .header .navegador a:hover {
-  color: red;
+  color: gold;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header .logo-head {
+    margin-left: 80px !important;
+  }
+  .header .logo-head img {
+    width: 15vw;
+  }
+  .header .titulo {
+    word-spacing: 5px;
+    letter-spacing: 5px;
+  }
+  .header .titulo h1 {
+    font-size: 60px;
+  }
+  .header .titulo h2 {
+    font-size: 50px;
+  }
+  .header .navegador {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .header .logo-head {
+    margin-left: 40px !important;
+  }
+  .header .logo-head img {
+    width: 20vw;
+  }
+  .header .titulo {
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 2px black;
+  }
+  .header .titulo h1 {
+    font-size: 40px;
+  }
+  .header .titulo h2 {
+    font-size: 25px;
+  }
+  .header .navegador {
+    flex-wrap: wrap;
+  }
+  .header .navegador a {
+    padding: 0 5px !important;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+  .header .logo-head {
+    margin-left: 20px !important;
+  }
+  .header .logo-head img {
+    width: 27vw !important;
+  }
+  .header .titulo {
+    word-spacing: 0px;
+    letter-spacing: 0px;
+  }
+  .header .titulo h1 {
+    font-size: 40px;
+  }
+  .header .titulo h2 {
+    font-size: 25px;
+  }
+  .header .navegador {
+    flex-wrap: wrap;
+  }
+  .header .navegador a {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header .logo-head {
+    margin-left: 15px !important;
+  }
+  .header img {
+    width: 30vw !important;
+  }
+  .header .titulo {
+    word-spacing: 0px;
+    letter-spacing: 0px;
+  }
+  .header .titulo h1 {
+    font-size: 40px;
+  }
+  .header .titulo h2 {
+    font-size: 30px;
+  }
+  .header .navegador {
+    flex-wrap: wrap;
+  }
+  .header .navegador a {
+    font-size: 8px;
+  }
+}
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.contenedor-boton {
+  height: 0.1%;
+  position: sticky;
+  float: right;
+  padding: 10px;
+  top: 90%;
+}
+.contenedor-boton img {
+  width: 80px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .contenedor-boton {
+    padding-right: 90px !important;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contenedor-boton {
+    padding-right: 120px !important;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+  .contenedor-boton {
+    padding-right: 90px !important;
+  }
+  .contenedor-boton img {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .contenedor-boton {
+    padding-right: 50px !important;
+  }
+  img {
+    width: 40px !important;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
