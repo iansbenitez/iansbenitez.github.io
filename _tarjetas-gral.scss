@@ -1,0 +1,51 @@
+.secciones   {
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    height: 60% !important;
+    background-color: bisque;
+    border: 2px solid black;
+    margin-top: 8% !important;
+    box-shadow: 10px 10px 5px black;
+    text-align: center;
+    
+
+    span {
+        color: blue;
+        text-transform: uppercase;
+    }
+
+    .div-seccion-name {
+        align-items: center;
+    }
+
+    .div-der {
+        display: flex;
+        flex-wrap: wrap;
+
+
+        
+        .card-lateral {   
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 40%;
+            margin: 20px 10 !important;
+            background-color: black;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: 2px solid white;
+            align-items: center;
+            justify-content: center;
+            padding: 1%;
+            color: white;
+            text-align: center;
+            box-shadow: 8px 8px 10px black;
+            
+        }
+
+        
+    
+    }
+}
+
