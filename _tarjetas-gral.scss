@@ -5,7 +5,7 @@
     height: 60% !important;
     background-color: bisque;
     border: 2px solid black;
-    margin-top: 8% !important;
+    margin-top: 4% !important;
     box-shadow: 10px 10px 5px black;
     text-align: center;
     
@@ -27,7 +27,63 @@
         
         .card-lateral {   
             display: flex;
-            flex-direction: column;
+            flex-direction: column; 
+            width: 30%;
+            height: 40%;
+            margin: 20px 10px !important;
+            background-color: black;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: 2px solid white;
+            align-items: center;
+            justify-content: center;
+            padding: 1%;
+            color: white;
+            text-align: center;
+            box-shadow: 8px 8px 10px black;
+
+
+            .img-prod-lateral {
+                width: 55%;
+                height: 60%;
+                margin: 10px 0 !important;
+                border-radius: 10px;
+                background-size: cover;
+                background-position: center;
+                box-shadow: 5px 5px 10px white;
+                box-sizing: border-box;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .info-prod {
+                margin: 5px 0 !important;
+                h3 {
+                    font-size: 20px !important;
+                    text-transform: uppercase;
+                }
+
+                h4 {
+                    font-size: 20px !important;
+                    text-transform: uppercase;
+                }
+            }
+            
+        }
+
+        
+    
+    }
+
+
+
+    .div-izq-2 {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card-lateral {   
+            display: flex;
+            flex-direction: column; 
             width: 30%;
             height: 40%;
             margin: 20px 10 !important;
@@ -41,11 +97,100 @@
             color: white;
             text-align: center;
             box-shadow: 8px 8px 10px black;
-            
+
+            .img-prod-lateral {
+                width: 55%;
+                height: 60%;
+                margin: 10px 0 !important;
+                border-radius: 10px;
+                background-size: cover;
+                background-position: center;
+                box-shadow: 5px 5px 10px white;
+                box-sizing: border-box;
+                background-position: center;
+                background-size: cover;
+            }
+    
+            .info-prod {
+                margin: 5px 0 !important;
+                h3 {
+                    font-size: 20px !important;
+                    text-transform: uppercase;
+                }
+    
+                h4 {
+                    font-size: 20px !important;
+                    text-transform: uppercase;
+                }
+            }
         }
 
         
-    
     }
 }
+
+#carniceria {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+
+.div-seccion-name-centro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    
+.container-card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+    
+        .container-card-centro
+        {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 35%;
+            height: 40%;
+            margin: 20px 15px !important;
+            background-color: black;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: 2px solid white;
+            align-items: center;
+            justify-content: center;
+            padding: 1%;
+            color: white;
+            text-align: center;
+            box-shadow: 8px 8px 10px black;
+    
+                .img-prod-centro {
+                 height: 65%;
+                }
+                .info-prod {
+                    margin: 5px 0 !important;
+                    h3 {
+                        font-size: 20px !important;
+                        text-transform: uppercase;
+                    }
+        
+                    h4 {
+                        font-size: 20px !important;
+                        text-transform: uppercase;
+                    }
+                }
+        
+        }
+    }
+
+
+
+
+
+
 

@@ -20,6 +20,7 @@ html, body {
     padding: 10px;
     top: 90%;
     
+    
     img {
         width: 80px;
     }
@@ -66,6 +67,75 @@ html, body {
 }
 
 
-#producto1 {
+.prod1 {
     background-image: url(img/leche-entera.webp);
+}
+
+.prod2 {
+    background-image: url(img/roast-beef.jpg);
+}
+
+.prod3 {
+    background-image: url(img/tomate-redondo.jpg);
+}
+
+.prod4 {
+    background-image: url(img/espadol.jpg);
+}
+
+.prod5 {
+    background-image: url(img/lavandina.webp);
+}
+
+.prod6 {
+    background-image: url(img/pan-flauta.webp);
+}
+
+.prod2b {
+    background-image: url(img/lata-atun.webp);
+}
+
+.prod3b {
+    background-image: url(img/oreo.jpg);
+}
+
+.prod4b {
+    background-image: url(img/crema-leche.jpg);
+}
+
+.prod5b {
+    background-image: url(img/azucar.webp);
+}
+
+.prod6b {
+    background-image: url(img/aceite-natura.jpg);
+}
+
+.prod2c {
+    background-image: url(img/asado.webp);
+}
+
+.prod3c {
+    background-image: url(img/bife-angosto.jpg);
+}
+
+.prod4c {
+    background-image: url(img/vacio.jpg);
+}
+
+.prod5c {
+    background-image: url(img/chorizo.webp);
+}
+
+.prod6c {
+    background-image: url(img/morcilla.jpg);
+}
+
+
+.prod7c {
+    background-image: url(img/chinchulin.webp);
+}
+
+.prod8c {
+    background-image: url(img/provoleta.png);
 }
