@@ -172,7 +172,7 @@
   height: 60% !important;
   background-color: bisque;
   border: 2px solid black;
-  margin-top: 8% !important;
+  margin-top: 4% !important;
   box-shadow: 10px 10px 5px black;
   text-align: center;
 }
@@ -192,6 +192,50 @@
   flex-direction: column;
   width: 30%;
   height: 40%;
+  margin: 20px 10px !important;
+  background-color: black;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid white;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  color: white;
+  text-align: center;
+  box-shadow: 8px 8px 10px black;
+}
+.secciones .div-der .card-lateral .img-prod-lateral {
+  width: 55%;
+  height: 60%;
+  margin: 10px 0 !important;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 10px white;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+}
+.secciones .div-der .card-lateral .info-prod {
+  margin: 5px 0 !important;
+}
+.secciones .div-der .card-lateral .info-prod h3 {
+  font-size: 20px !important;
+  text-transform: uppercase;
+}
+.secciones .div-der .card-lateral .info-prod h4 {
+  font-size: 20px !important;
+  text-transform: uppercase;
+}
+.secciones .div-izq-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.secciones .div-izq-2 .card-lateral {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 40%;
   margin: 20px 10 !important;
   background-color: black;
   box-sizing: border-box;
@@ -203,6 +247,81 @@
   color: white;
   text-align: center;
   box-shadow: 8px 8px 10px black;
+}
+.secciones .div-izq-2 .card-lateral .img-prod-lateral {
+  width: 55%;
+  height: 60%;
+  margin: 10px 0 !important;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 10px white;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+}
+.secciones .div-izq-2 .card-lateral .info-prod {
+  margin: 5px 0 !important;
+}
+.secciones .div-izq-2 .card-lateral .info-prod h3 {
+  font-size: 20px !important;
+  text-transform: uppercase;
+}
+.secciones .div-izq-2 .card-lateral .info-prod h4 {
+  font-size: 20px !important;
+  text-transform: uppercase;
+}
+
+#carniceria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-seccion-name-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+.container-card .container-card-centro {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 35%;
+  height: 40%;
+  margin: 20px 15px !important;
+  background-color: black;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid white;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  color: white;
+  text-align: center;
+  box-shadow: 8px 8px 10px black;
+}
+.container-card .container-card-centro .img-prod-centro {
+  height: 65%;
+}
+.container-card .container-card-centro .info-prod {
+  margin: 5px 0 !important;
+}
+.container-card .container-card-centro .info-prod h3 {
+  font-size: 20px !important;
+  text-transform: uppercase;
+}
+.container-card .container-card-centro .info-prod h4 {
+  font-size: 20px !important;
+  text-transform: uppercase;
 }
 
 * {
@@ -258,8 +377,76 @@ html, body {
     width: 40px !important;
   }
 }
-#producto1 {
+.prod1 {
   background-image: url(img/leche-entera.webp);
+}
+
+.prod2 {
+  background-image: url(img/roast-beef.jpg);
+}
+
+.prod3 {
+  background-image: url(img/tomate-redondo.jpg);
+}
+
+.prod4 {
+  background-image: url(img/espadol.jpg);
+}
+
+.prod5 {
+  background-image: url(img/lavandina.webp);
+}
+
+.prod6 {
+  background-image: url(img/pan-flauta.webp);
+}
+
+.prod2b {
+  background-image: url(img/lata-atun.webp);
+}
+
+.prod3b {
+  background-image: url(img/oreo.jpg);
+}
+
+.prod4b {
+  background-image: url(img/crema-leche.jpg);
+}
+
+.prod5b {
+  background-image: url(img/azucar.webp);
+}
+
+.prod6b {
+  background-image: url(img/aceite-natura.jpg);
+}
+
+.prod2c {
+  background-image: url(img/asado.webp);
+}
+
+.prod3c {
+  background-image: url(img/bife-angosto.jpg);
+}
+
+.prod4c {
+  background-image: url(img/vacio.jpg);
+}
+
+.prod5c {
+  background-image: url(img/chorizo.webp);
+}
+
+.prod6c {
+  background-image: url(img/morcilla.jpg);
+}
+
+.prod7c {
+  background-image: url(img/chinchulin.webp);
+}
+
+.prod8c {
+  background-image: url(img/provoleta.png);
 }
 
 /*# sourceMappingURL=estilos.css.map */
