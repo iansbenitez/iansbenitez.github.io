@@ -205,6 +205,14 @@
   color: white;
   text-align: center;
   box-shadow: 8px 8px 10px black;
+  transition-property: width;
+  transition-property: height;
+  transition-delay: 0.2s;
+  transition-duration: 500ms;
+}
+.secciones .div-der .card-lateral:hover {
+  width: 350px;
+  height: 250px;
 }
 .secciones .div-der .card-lateral .img-prod-lateral {
   width: 55%;
@@ -250,6 +258,14 @@
   color: white;
   text-align: center;
   box-shadow: 8px 8px 10px black;
+  transition-property: width;
+  transition-property: height;
+  transition-delay: 0.2s;
+  transition-duration: 500ms;
+}
+.secciones .div-izq-2 .card-lateral:hover {
+  width: 350px;
+  height: 250px;
 }
 .secciones .div-izq-2 .card-lateral .img-prod-lateral {
   width: 55%;
@@ -310,6 +326,14 @@
   color: white;
   text-align: center;
   box-shadow: 8px 8px 10px black;
+  transition-property: width;
+  transition-property: height;
+  transition-delay: 0.2s;
+  transition-duration: 500ms;
+}
+.container-card .container-card-centro:hover {
+  width: 200px;
+  height: 250px;
 }
 .container-card .container-card-centro .img-prod-centro {
   height: 65%;
