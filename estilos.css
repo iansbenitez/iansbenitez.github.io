@@ -478,6 +478,71 @@
     font-size: 12px !important;
   }
 }
+.pie-pag {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px !important;
+  background-color: bisque !important;
+  border-top: 3px solid black;
+  height: 25%;
+}
+.pie-pag .texto-pie {
+  height: 30%;
+  text-align: center;
+}
+.pie-pag .texto-pie h3 {
+  text-transform: uppercase;
+}
+.pie-pag .redes-pie ul {
+  margin-top: 30px !important;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pie-pag .redes-pie ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+.pie-pag .redes-pie ul li a:hover {
+  color: red;
+  background-color: gold;
+  border-radius: 50px;
+}
+.pie-pag .redes-pie ul img {
+  width: 20px;
+}
+
+@media only screen and (max-width: 575px) {
+  .pie-pag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 18%;
+  }
+  .pie-pag .texto-pie {
+    display: inline !important;
+  }
+  .pie-pag .texto-pie h3 {
+    font-size: 15px !important;
+  }
+  .pie-pag .redes-pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pag .redes-pie ul {
+    display: inline !important;
+  }
+  .pie-pag .redes-pie ul li a {
+    font-size: 15px !important;
+  }
+  .pie-pag .redes-pie ul li img {
+    width: 13px !important;
+  }
+}
 * {
   margin: 0 !important;
   padding: 0 !important;
