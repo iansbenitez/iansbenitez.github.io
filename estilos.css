@@ -175,9 +175,10 @@
   margin-top: 4% !important;
   box-shadow: 10px 10px 5px black;
   text-align: center;
+  justify-content: space-evenly !important;
 }
 .secciones span {
-  color: blue;
+  color: red !important;
   text-transform: uppercase;
 }
 .secciones .div-seccion-name {
@@ -186,11 +187,12 @@
 .secciones .div-der {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .secciones .div-der .card-lateral {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 28%;
   height: 40%;
   margin: 20px 10px !important;
   background-color: black;
@@ -230,11 +232,12 @@
 .secciones .div-izq-2 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .secciones .div-izq-2 .card-lateral {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 28%;
   height: 40%;
   margin: 20px 10 !important;
   background-color: black;
@@ -271,15 +274,14 @@
   font-size: 20px !important;
   text-transform: uppercase;
 }
-
-#carniceria {
+.secciones .container-card-centro-main {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .div-seccion-name-centro {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
 }
@@ -289,7 +291,7 @@
   flex-wrap: wrap;
   width: 40%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .container-card .container-card-centro {
   display: flex;
@@ -311,6 +313,14 @@
 }
 .container-card .container-card-centro .img-prod-centro {
   height: 65%;
+  width: 65%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 10px white;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
 }
 .container-card .container-card-centro .info-prod {
   margin: 5px 0 !important;
@@ -324,6 +334,150 @@
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 992px) {
+  .secciones {
+    flex-direction: column;
+    margin-top: 50px !important;
+  }
+  .secciones .div-seccion-name {
+    height: 15%;
+    align-items: center !important;
+  }
+  .secciones .div-der {
+    height: 85%;
+  }
+  .secciones .div-der .card-lateral .info-prod h3 {
+    font-size: 15px !important;
+    text-transform: uppercase;
+  }
+  .secciones .div-der .card-lateral .info-prod h4 {
+    font-size: 15px !important;
+    text-transform: uppercase;
+  }
+  .secciones .div-izq-2 {
+    height: 85%;
+    flex-direction: column;
+    order: 1 !important;
+  }
+  .secciones .div-izq-2 .card-lateral .info-prod h3 {
+    font-size: 15px !important;
+    text-transform: uppercase;
+  }
+  .secciones .div-izq-2 .card-lateral .info-prod h4 {
+    font-size: 15px !important;
+    text-transform: uppercase;
+  }
+  .seccion-centro {
+    display: flex;
+    align-items: center;
+    height: 100% !important;
+  }
+  .seccion-centro .container-card-centro-main {
+    display: flex;
+    align-items: center;
+    height: 43%;
+  }
+  .seccion-centro .container-card-centro {
+    margin-top: -10px !important;
+    flex-wrap: wrap;
+    width: 34%;
+    height: 45%;
+    align-items: center;
+  }
+  .seccion-centro .container-card-centro .img-prod-centro {
+    width: 50%;
+    height: 60%;
+  }
+  .seccion-centro .container-card-centro .info-prod h3 {
+    font-size: 15px !important;
+  }
+  .seccion-centro .container-card-centro .info-prod h4 {
+    font-size: 15px !important;
+  }
+  .seccion-centro .div-seccion-name-centro {
+    height: 14%;
+    order: -1;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .secciones {
+    margin-top: 40px !important;
+    box-shadow: 3px 3px 1px black !important;
+  }
+  .secciones .div-seccion-name {
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.795) !important;
+    border-radius: 50px;
+  }
+  .secciones .div-der {
+    height: 90%;
+  }
+  .secciones .div-der .card-lateral {
+    width: 40%;
+    height: 25%;
+  }
+  .secciones .div-der .card-lateral .img-prod-lateral {
+    width: 75%;
+    height: 80%;
+  }
+  .secciones .div-der .card-lateral .info-prod h3 {
+    font-size: 13px !important;
+  }
+  .secciones .div-der .card-lateral .info-prod h4 {
+    font-size: 13px !important;
+  }
+  .secciones .div-izq-2 {
+    height: 90%;
+    flex-direction: column;
+    order: 1 !important;
+  }
+  .secciones .div-izq-2 .card-lateral {
+    width: 40%;
+    height: 25%;
+  }
+  .secciones .div-izq-2 .card-lateral .img-prod-lateral {
+    width: 75%;
+    height: 80%;
+  }
+  .secciones .div-izq-2 .card-lateral .info-prod h3 {
+    font-size: 13px !important;
+  }
+  .secciones .div-izq-2 .card-lateral .info-prod h4 {
+    font-size: 13px !important;
+  }
+  .seccion-centro {
+    height: 80% !important;
+  }
+  .seccion-centro .div-seccion-name-centro {
+    height: 8%;
+    order: -1 !important;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.795) !important;
+  }
+  .seccion-centro .container-card-centro-main {
+    margin-top: 20px !important;
+    display: flex;
+    align-items: center;
+    height: 43%;
+  }
+  .seccion-centro .container-card-centro {
+    margin-top: -10px !important;
+    flex-wrap: wrap;
+    width: 38%;
+    height: 45%;
+    justify-content: space-evenly;
+  }
+  .seccion-centro .container-card-centro .img-prod-centro {
+    width: 75%;
+    height: 60%;
+  }
+  .seccion-centro .container-card-centro .info-prod h3 {
+    font-size: 12px !important;
+  }
+  .seccion-centro .container-card-centro .info-prod h4 {
+    font-size: 12px !important;
+  }
+}
 * {
   margin: 0 !important;
   padding: 0 !important;
@@ -335,7 +489,7 @@ html, body {
 }
 
 .contenedor-boton {
-  height: 100%;
+  height: 10%;
   position: sticky;
   float: right;
   padding: 10px;
@@ -345,36 +499,33 @@ html, body {
   width: 80px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 576px) and (max-width: 992px) {
   .contenedor-boton {
-    padding-right: 90px !important;
-  }
-  .contenedor-boton img {
-    width: 70px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .contenedor-boton {
-    padding-right: 120px !important;
-  }
-  .contenedor-boton img {
-    width: 60px;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 575px) {
-  .contenedor-boton {
-    padding-right: 90px !important;
+    padding-right: 10px !important;
   }
   .contenedor-boton img {
     width: 50px;
   }
 }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .contenedor-boton {
+    padding-right: 5px !important;
+  }
+  .contenedor-boton img {
+    width: 45px !important;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+  .contenedor-boton img {
+    width: 35px !important;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .contenedor-boton {
-    padding-right: 50px !important;
+    padding-right: 2px !important;
   }
   img {
-    width: 40px !important;
+    width: 25px !important;
   }
 }
 .prod1 {
@@ -421,6 +572,11 @@ html, body {
   background-image: url(img/aceite-natura.jpg);
 }
 
+#carniceria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .prod2c {
   background-image: url(img/asado.webp);
 }
@@ -447,6 +603,145 @@ html, body {
 
 .prod8c {
   background-image: url(img/provoleta.png);
+}
+
+#verduleria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prod2d {
+  background-image: url(img/criolla.webp);
+}
+
+.prod3d {
+  background-image: url(img/zanahoria.jpg);
+}
+
+.prod4d {
+  background-image: url(img/zapallitos.jpg);
+}
+
+.prod5d {
+  background-image: url(img/morron-rojo.png);
+}
+
+.prod6d {
+  background-image: url(img/papa-negra.webp);
+}
+
+.prod2d {
+  background-image: url(img/criolla.webp);
+}
+
+.prod3d {
+  background-image: url(img/zanahoria.jpg);
+}
+
+.prod4d {
+  background-image: url(img/zapallitos.jpg);
+}
+
+.prod5d {
+  background-image: url(img/morron-rojo.png);
+}
+
+.prod6d {
+  background-image: url(img/papa-negra.webp);
+}
+
+#panaderia {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prod2f {
+  background-image: url(img/facturas.jpg);
+}
+
+.prod3f {
+  background-image: url(img/mini-torta.jpg);
+}
+
+.prod4f {
+  background-image: url(img/masitas.jpg);
+}
+
+.prod5f {
+  background-image: url(img/sanguchito.miga.jpg);
+}
+
+.prod6f {
+  background-image: url(img/pepas.webp);
+}
+
+#limpieza {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prod2e {
+  background-image: url(img/jabon-liquido.webp);
+}
+
+.prod3e {
+  background-image: url(img/desodorante-depiso.webp);
+}
+
+.prod4e {
+  background-image: url(img/cera-piso.webp);
+}
+
+.prod5e {
+  background-image: url(img/suavizante-ropa.webp.webp);
+}
+
+.prod6e {
+  background-image: url(img/lysoform.png);
+}
+
+.prod7e {
+  background-image: url(img/higienico.webp);
+}
+
+.prod8e {
+  background-image: url(img/trapo-piso.jpg);
+}
+
+#panaderia {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prod2f {
+  background-image: url(img/facturas.jpg);
+}
+
+.prod3f {
+  background-image: url(img/mini-torta.jpg);
+}
+
+.prod4f {
+  background-image: url(img/masitas.jpg);
+}
+
+.prod5f {
+  background-image: url(img/sanguchito.miga.jpg);
+}
+
+.prod6f {
+  background-image: url(img/pepas.webp);
+}
+
+#desod-piso {
+  font-size: 15px !important;
+  color: white !important;
+}
+
+@media only screen and (max-width: 480px) {
+  #desod-piso {
+    font-size: 12px !important;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
