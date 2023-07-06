@@ -43,6 +43,15 @@
             color: white;
             text-align: center;
             box-shadow: 8px 8px 10px black;
+            transition-property: width;
+            transition-property: height;
+            transition-delay: 0.2s;
+            transition-duration: 500ms;
+
+            &:hover {
+                width: 350px;
+                height: 250px;
+            }
 
 
             .img-prod-lateral {
@@ -100,6 +109,15 @@
             color: white;
             text-align: center;
             box-shadow: 8px 8px 10px black;
+            transition-property: width;
+            transition-property: height;
+            transition-delay: 0.2s;
+            transition-duration: 500ms;
+
+            &:hover {
+                width: 350px;
+                height: 250px;
+            }
 
             .img-prod-lateral {
                 width: 55%;
@@ -172,6 +190,17 @@
             color: white;
             text-align: center;
             box-shadow: 8px 8px 10px black;
+            transition-property: width;
+            transition-property: height;
+            transition-delay: 0.2s;
+            transition-duration: 500ms;
+
+            &:hover {
+                width: 200px;
+                height: 250px;
+            }
+
+    
     
                 .img-prod-centro {
                 height: 65%;
