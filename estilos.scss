@@ -14,41 +14,21 @@ html, body {
 
 
 .contenedor-boton {
-    height: 100%;
+    height: 10%;
     position: sticky;
     float: right;
     padding: 10px;
     top: 90%;
-    
+
     
     img {
         width: 80px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 576px) and (max-width: 992px) {
     .contenedor-boton {
-        padding-right: 90px !important;
-
-        img {
-            width: 70px;
-        }
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .contenedor-boton {
-        padding-right: 120px !important;
-
-        img {
-            width: 60px;
-        }
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 575px) {
-    .contenedor-boton {
-        padding-right: 90px !important;
+        padding-right: 10px !important;
 
         img {
             width: 50px;
@@ -56,13 +36,33 @@ html, body {
     }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .contenedor-boton {
+        padding-right: 5px !important;
+
+        img {
+            width: 45px !important;
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+    .contenedor-boton {
+        img {
+            width: 35px !important;
+        }
+    }
+}
+
 @media only screen and (min-width:320px) and (max-width: 480px) {
     .contenedor-boton {
-        padding-right: 50px !important;
+        padding-right: 2px !important;
+        
     }
 
     img {
-        width: 40px !important;
+        width: 25px !important;
+        
     }
 }
 
@@ -91,6 +91,8 @@ html, body {
     background-image: url(img/pan-flauta.webp);
 }
 
+
+
 .prod2b {
     background-image: url(img/lata-atun.webp);
 }
@@ -109,6 +111,13 @@ html, body {
 
 .prod6b {
     background-image: url(img/aceite-natura.jpg);
+}
+
+#carniceria {
+    
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .prod2c {
@@ -138,4 +147,151 @@ html, body {
 
 .prod8c {
     background-image: url(img/provoleta.png);
+}
+
+#verduleria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prod2d {
+    background-image: url(img/criolla.webp);
+}
+
+.prod3d {
+    background-image: url(img/zanahoria.jpg);
+}
+
+.prod4d {
+    background-image: url(img/zapallitos.jpg);
+}
+
+.prod5d {
+    background-image: url(img/morron-rojo.png);
+}
+
+.prod6d {
+    background-image: url(img/papa-negra.webp);
+}
+
+.prod2d {
+    background-image: url(img/criolla.webp);
+}
+
+.prod3d {
+    background-image: url(img/zanahoria.jpg);
+}
+
+.prod4d {
+    background-image: url(img/zapallitos.jpg);
+}
+
+.prod5d {
+    background-image: url(img/morron-rojo.png);
+}
+
+.prod6d {
+    background-image: url(img/papa-negra.webp);
+}
+
+
+#panaderia {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prod2f {
+    background-image: url(img/facturas.jpg);
+}
+
+.prod3f {
+    background-image: url(img/mini-torta.jpg);
+}
+
+
+.prod4f {
+    background-image: url(img/masitas.jpg);
+}
+
+.prod5f {
+    background-image: url(img/sanguchito.miga.jpg);
+}
+
+.prod6f {
+    background-image: url(img/pepas.webp);
+}
+
+
+#limpieza {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.prod2e {
+    background-image: url(img/jabon-liquido.webp);
+}
+
+.prod3e {
+    background-image: url(img/desodorante-depiso.webp);
+}
+
+
+.prod4e {
+    background-image: url(img/cera-piso.webp);
+}
+
+.prod5e {
+    background-image: url(img/suavizante-ropa.webp.webp);
+}
+
+
+.prod6e {
+    background-image: url(img/lysoform.png);
+}
+
+.prod7e {
+    background-image: url(img/higienico.webp);
+}
+
+.prod8e {
+    background-image: url(img/trapo-piso.jpg);
+}
+
+
+#panaderia {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prod2f {
+    background-image: url(img/facturas.jpg);
+}
+
+.prod3f {
+    background-image: url(img/mini-torta.jpg);
+}
+
+
+.prod4f {
+    background-image: url(img/masitas.jpg);
+}
+
+.prod5f {
+    background-image: url(img/sanguchito.miga.jpg);
+}
+
+.prod6f {
+    background-image: url(img/pepas.webp);
+}
+
+#desod-piso {
+    font-size: 15px !important;
+    color: white !important;
+}
+
+@media only screen and (max-width: 480px) {
+    #desod-piso {
+        font-size: 12px !important;
+    }
 }

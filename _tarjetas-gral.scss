@@ -8,10 +8,11 @@
     margin-top: 4% !important;
     box-shadow: 10px 10px 5px black;
     text-align: center;
+    justify-content: space-evenly !important;
     
 
     span {
-        color: blue;
+        color: red !important;
         text-transform: uppercase;
     }
 
@@ -21,14 +22,15 @@
 
     .div-der {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;   
+        justify-content: space-evenly;
 
 
         
         .card-lateral {   
             display: flex;
             flex-direction: column; 
-            width: 30%;
+            width: 28%;
             height: 40%;
             margin: 20px 10px !important;
             background-color: black;
@@ -80,11 +82,12 @@
     .div-izq-2 {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
 
         .card-lateral {   
             display: flex;
             flex-direction: column; 
-            width: 30%;
+            width: 28%;
             height: 40%;
             margin: 20px 10 !important;
             background-color: black;
@@ -127,18 +130,18 @@
 
         
     }
+
+    .container-card-centro-main {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
-#carniceria {
-    
-    display: flex;
-    flex-wrap: wrap;
-}
-    
+
 
 .div-seccion-name-centro {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         text-transform: uppercase;
     }
@@ -148,8 +151,9 @@
         flex-wrap: wrap;
         width: 40%;
         align-items: center;
-        justify-content: center;
-    
+        justify-content: space-evenly;
+
+        
         .container-card-centro
         {
             display: flex;
@@ -170,7 +174,15 @@
             box-shadow: 8px 8px 10px black;
     
                 .img-prod-centro {
-                 height: 65%;
+                height: 65%;
+                width: 65%;
+                border-radius: 10px;
+                background-size: cover;
+                background-position: center;
+                box-shadow: 5px 5px 10px white;
+                box-sizing: border-box;
+                background-position: center;
+                background-size: cover;
                 }
                 .info-prod {
                     margin: 5px 0 !important;
@@ -188,9 +200,218 @@
         }
     }
 
+@media only screen and (min-width: 480px) and (max-width: 992px){
+    .secciones {
+        flex-direction: column;
+        margin-top: 50px !important;
+
+        .div-seccion-name {
+            height: 15%;
+            align-items: center !important;
+        }
+
+        .div-der {
+            height: 85%;
+
+            .card-lateral {
+
+            .info-prod {
+                h3 {
+                    font-size: 15px !important;
+                    text-transform: uppercase;
+                }
+
+                h4 {
+                    font-size: 15px !important;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        }
+
+        .div-izq-2 {
+        height: 85%;
+        flex-direction: column;
+        order: 1 !important;
+
+        
+        .card-lateral {
+            
+
+            .info-prod {
+                h3 {
+                    font-size: 15px !important;
+                    text-transform: uppercase;
+                }
+
+                h4 {
+                    font-size: 15px !important;
+                    text-transform: uppercase;
+                }
+            }
+        } 
+    
+        }
+    }
+
+    
+
+    .seccion-centro {
+        display: flex;
+        align-items: center;
+        height: 100% !important;
+        
+
+        .container-card-centro-main {
+            display: flex;
+            align-items: center;
+            
+            height: 43%;
+        }
+            .container-card-centro {
+                margin-top: -10px !important;
+                flex-wrap: wrap;
+                width:34%;
+                height: 45%;
+                align-items: center;
 
 
+                .img-prod-centro {
+                    width: 50%;
+                    height: 60%;
+                }
+
+                .info-prod {
+                    
+                    h3 {
+                        font-size: 15px !important;
+                    }
+
+                    h4 {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+
+        .div-seccion-name-centro {
+            height: 14%;
+            order: -1;
+        }
+    }
+    
+    }
+    
 
 
+@media only screen and (min-width:320px) and (max-width: 480px) {
+    .secciones {
+        margin-top: 40px !important;
+        box-shadow: 3px 3px 1px black !important;
+
+        .div-seccion-name {
+            height: 10%;
+            background-color: rgba(255, 255, 255, 0.795) !important;
+            border-radius: 50px;
+        }
+
+        .div-der {
+            height: 90%;
+
+            .card-lateral {
+                width: 40%;
+                height: 25%;
+
+                .img-prod-lateral {
+                    width: 75%;
+                    height: 80%;
+                }
+
+                .info-prod {
+                    h3 {
+                        font-size: 13px !important;
+                    }
+
+                    h4 {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+
+        .div-izq-2 {
+            height: 90%;
+            flex-direction: column;
+            order: 1 !important;
+            
+
+            .card-lateral {
+                width: 40%;
+                height: 25%;
+
+                .img-prod-lateral {
+                    width: 75%;
+                    height: 80%;
+                }
+
+                .info-prod {
+                    h3 {
+                        font-size: 13px !important;
+                    }
+
+                    h4 {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+
+        
+}
+
+.seccion-centro {
+            height: 80% !important;
+
+    .div-seccion-name-centro {
+        height: 8%;
+        order: -1 !important;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.795) !important;
+    }
+    
+    .container-card-centro-main {
+        margin-top: 20px !important;
+        display: flex;
+        align-items: center;
+        
+        height: 43%;
+    }
+        .container-card-centro {
+            margin-top: -10px !important;
+            flex-wrap: wrap;
+            width: 38%;
+            height: 45%;
+            justify-content: space-evenly;
+            
 
 
+            .img-prod-centro {
+                width: 75%;
+                height: 60%;
+            }
+
+            .info-prod {
+                
+                h3 {
+                    font-size: 12px !important;
+                }
+
+                h4 {
+                    font-size: 12px !important;
+                }
+            }
+        }
+
+
+}
+
+}

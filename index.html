@@ -42,20 +42,20 @@
     </header>
 
 
-    <main>
+    <main class="container-fluid mx-auto">
 
-        <div class="container-fluid col-1 row contenedor-boton"> 
-            <div class="container-fluid col-12 h100 row botonestatico">
+        <div class="container-fluid col-12 row mx-auto contenedor-boton"> 
+            <div class="container-fluid col-12 botonestatico d-flex flex-row-reverse">
                 <a href="#inicio"><img src="img/arrow-up.png"></a>
             </div>
         </div>  
     
-        <section class="container-fluid col-8 row mx-auto secciones seccion-izq" id="productos-destacados">   
-            <div class="container-fluid row col-lg-4 div-seccion-name">
+        <section class="container-fluid col-10 row mx-auto secciones" id="productos-destacados">   
+            <div class="container-fluid row col-sm-4 col-sm-12 col-lg-4 div-seccion-name">
                 <h2>Productos <span>destacados</span></h2>
             </div>
     
-            <div class="container-fluid row col-8 div-der">
+            <div class="container-fluid row col-sm-8 col-sm-12 col-lg-8 div-der">
                 <div class="container-fluid card-lateral">   
                     <div class="img-prod-lateral prod1">
     
@@ -120,14 +120,14 @@
         </section>
         
     
-        <section class="container-fluid row col-8 mx-auto secciones" id="almacen">
-            <div class="container-fluid row col-lg-8 div-izq-2">
+        <section class="container-fluid row col-10 mx-auto secciones" id="almacen">
+            <div class="container-fluid row col-lg-8 col-sm-12 col-12 div-izq-2">
                 <div class="card-lateral">
                     <div class="img-prod-lateral prod1">
     
                     </div>
     
-                    <div class="info-prod prod1b">
+                    <div class="info-prod">
                         <h3>Leche entera</h3>
                         <h4>$299,99</h4>
                     </div>
@@ -191,16 +191,16 @@
     
             </div>
     
-            <div class="container-fluid row col-lg-4 div-seccion-name">
+            <div class="container-fluid row col-lg-4 col-sm-12 col-12 div-seccion-name">
                 <h2><span>Almacén</span></h2>
             </div>
         </section>
     
     
     
-        <section class="container-fluid col-8 mx-auto secciones seccion-centro" id="carniceria">
+        <section class="container-fluid col-10 mx-auto secciones seccion-centro" id="carniceria">
     
-            <div class="container-card container-card-centro-main">
+            <div class="container-card col-lg-4 col-sm-12 mx-auto col-12 container-card-centro-main">
                 <div class="container-card-centro">
                     <div class="img-prod-centro img-prod-lateral prod2">
     
@@ -246,11 +246,11 @@
                 </div>
             </div>
     
-            <div class="div-seccion-name-centro order1">
+            <div class="div-seccion-name-centro col-lg-4 col-sm-12 col-12 order1">
                 <h2><span>Carnicería</span></h2>
             </div>
     
-            <div class="container-card container-card-centro-main">
+            <div class="container-card col-lg-4 col-sm-12 col-12 container-card-centro-main">
                 <div class="container-card-centro">
                     <div class="img-prod-centro img-prod-lateral prod5c">
     
@@ -301,18 +301,18 @@
     
     
     
-        <section class="container-fluid col-8 row mx-auto secciones seccion-izq" id="verduleria">
-            <div class="container-fluid row col-lg-4 div-seccion-name">
+        <section class="container-fluid col-10 row mx-auto secciones seccion-izq" id="verduleria">
+            <div class="container-fluid row col-lg-4 col-sm-12 div-seccion-name">
                 <h2><span>Verdulería</span></h2>
             </div>
     
-            <div class="container-fluid row col-8 div-der">
+            <div class="container-fluid row col-lg-8 col-sm-12 div-der">
                 <div class="container-fluid card-lateral">
                     <div class="img-prod-lateral prod3">
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Tomate redondo</h3>
                         <h4>$499,99 KG.</h4>
                     </div>
@@ -323,7 +323,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Lechuga criolla</h3>
                         <h4>$419,99 KG.</h4>
                     </div>
@@ -334,7 +334,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Zanahoria</h3>
                         <h4>$229,99 KG.</h4>
                     </div>
@@ -345,7 +345,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Zapallito verde</h3>
                         <h4>$489,99 KG.</h4>
                     </div>
@@ -356,7 +356,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Morrón rojo</h3>
                         <h4>$619,99 KG.</h4>
                     </div>
@@ -367,7 +367,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Papa</h3>
                         <h4>$209,99 KG.</h4>
                     </div>
@@ -377,15 +377,14 @@
 
 
 
-        <section class="secciones seccion-izq" id="panaderia">
-    
-            <div class="div-der">
-                <div class="card-lateral">
+        <section class="container-fluid row col-10 mx-auto secciones" id="panaderia">
+            <div class="container-fluid row col-lg-8 col-sm-12 col-12 div-izq-2">
+                <div class="container-fluid card-lateral">
                     <div class="img-prod-lateral prod6">
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Pan flauta</h3>
                         <h4>$449,99 KG.</h4>
                     </div>
@@ -396,7 +395,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Docena de facturas</h3>
                         <h4>$989,99</h4>
                     </div>
@@ -407,7 +406,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Tortas individuales</h3>
                         <h4>$1.129,99</h4>
                     </div>
@@ -418,7 +417,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Masitas</h3>
                         <h4>$499,99 1/4 KG.</h4>
                     </div>
@@ -429,7 +428,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Sanguchito de miga</h3>
                         <h4>$219,99 C/U</h4>
                     </div>
@@ -440,14 +439,14 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Pepas</h3>
                         <h4>$589,99 1/4 KG.</h4>
                     </div>
                 </div>
             </div>
 
-            <div class="div-seccion-name">
+            <div class="container-fluid row col-lg-4 col-sm-12 div-seccion-name">
                 <h2><span>Panadería</span></h2>
             </div>
         </section>
@@ -455,14 +454,15 @@
     
     
     
-        <section class="secciones seccion-centro" id="limpieza">
-            <div class="container-card container-card-centro-main">
+        <section class="container-fluid col-10 mx-auto secciones seccion-centro" id="limpieza">
+    
+            <div class="container-card col-lg-4 col-sm-12 col-12 container-card-centro-main">
                 <div class="container-card-centro">
                     <div class="img-prod-centro img-prod-lateral prod5">
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Lavandina</h3>
                         <h4>$219,99</h4>  
                     </div>
@@ -473,7 +473,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Jabón líquido</h3>
                         <h4>$449,99</h4>
                     </div>
@@ -484,8 +484,8 @@
     
                    </div>
     
-                   <div>
-                        <h3>Desodorante de piso</h3>
+                   <div class="info-prod">
+                        <h3><span id="desod-piso">Desodorante de piso</span></h3>
                         <h4>$489,99</h4>
                    </div> 
                 </div>
@@ -495,7 +495,7 @@
     
                    </div>
     
-                   <div>
+                   <div class="info-prod">
                         <h3>Cera para piso</h3>
                         <h4>$889,99</h4>
                    </div> 
@@ -503,17 +503,17 @@
     
             </div>
     
-            <div class="div-seccion-name-centro order1">
+            <div class="div-seccion-name-centro col-lg-4 col-sm-12 col-12">
                 <h2><span>Limpieza</span></h2>
             </div>
     
-            <div class="container-card container-card-centro-main">
+            <div class="container-card col-lg-4 col-sm-12 col-12 container-card-centro-main">
                 <div class="container-card-centro">
                     <div class="img-prod-centro img-prod-lateral prod5e">
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Suavizante</h3>
                         <h4>$699,99</h4>
                     </div>
@@ -524,7 +524,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Lysoform</h3>
                         <h4>$349,99</h4>
                     </div>
@@ -535,7 +535,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Papel higiénico</h3>
                         <h4>$689,99</h4>
                     </div>
@@ -546,7 +546,7 @@
     
                     </div>
     
-                    <div>
+                    <div class="info-prod">
                         <h3>Trapo de piso</h3>
                         <h4>$249,99</h4>
                     </div>
