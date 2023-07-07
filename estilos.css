@@ -559,18 +559,18 @@
 }
 @media only screen and (min-width: 480px) and (max-width: 575px) {
   .secciones .card-lateral {
-    width: 2% !important;
+    width: 22% !important;
   }
   .secciones .card-lateral:hover {
     width: 120px !important;
-    height: 220px !important;
+    height: 205px !important;
   }
   .secciones .div-izq-2 .card-lateral {
     width: 25%;
   }
   .secciones .div-izq-2 .card-lateral:hover {
     width: 125px !important;
-    height: 220px !important;
+    height: 205px !important;
   }
   .seccion-centro .container-card-centro {
     width: 30%;
