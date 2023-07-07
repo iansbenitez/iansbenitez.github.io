@@ -517,7 +517,7 @@
     .secciones {
         .card-lateral{
             &:hover {
-                width: 10px !important;
+                width: 180px !important;
             }
             }
         .div-izq-2 {
@@ -556,7 +556,7 @@
             .card-lateral {
                 &:hover {
                     width: 145px !important;
-                    height: 220px !important;
+                    height: 210px !important;
                 }
             }
         }
@@ -580,16 +580,17 @@
     .secciones {
         .card-lateral{
 
-            width: 22%;
+            width: 22% !important;
             &:hover {
-                width: 114px !important;
+                width: 120px !important;
                 height: 220px !important;
             }
             }
         .div-izq-2 {
             .card-lateral {
+                width: 25%;
                 &:hover {
-                    width: 114px !important;
+                    width: 125px !important;
                     height: 220px !important;
                 }
             }

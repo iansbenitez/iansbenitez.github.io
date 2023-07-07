@@ -529,7 +529,7 @@
 }
 @media only screen and (min-width: 678px) and (max-width: 992px) {
   .secciones .card-lateral:hover {
-    width: 10px !important;
+    width: 180px !important;
   }
   .secciones .div-izq-2 .card-lateral:hover {
     width: 180px !important;
@@ -548,7 +548,7 @@
   }
   .secciones .div-izq-2 .card-lateral:hover {
     width: 145px !important;
-    height: 220px !important;
+    height: 210px !important;
   }
   .seccion-centro .container-card-centro {
     width: 30%;
@@ -559,14 +559,17 @@
 }
 @media only screen and (min-width: 480px) and (max-width: 575px) {
   .secciones .card-lateral {
-    width: 22%;
+    width: 22% !important;
   }
   .secciones .card-lateral:hover {
-    width: 114px !important;
+    width: 120px !important;
     height: 220px !important;
   }
+  .secciones .div-izq-2 .card-lateral {
+    width: 25%;
+  }
   .secciones .div-izq-2 .card-lateral:hover {
-    width: 114px !important;
+    width: 125px !important;
     height: 220px !important;
   }
   .seccion-centro .container-card-centro {
