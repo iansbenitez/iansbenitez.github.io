@@ -211,7 +211,7 @@
   transition-duration: 500ms;
 }
 .secciones .div-der .card-lateral:hover {
-  width: 350px;
+  width: 250px;
   height: 250px;
 }
 .secciones .div-der .card-lateral .img-prod-lateral {
@@ -264,7 +264,7 @@
   transition-duration: 500ms;
 }
 .secciones .div-izq-2 .card-lateral:hover {
-  width: 350px;
+  width: 250px !important;
   height: 250px;
 }
 .secciones .div-izq-2 .card-lateral .img-prod-lateral {
@@ -332,7 +332,7 @@
   transition-duration: 500ms;
 }
 .container-card .container-card-centro:hover {
-  width: 200px;
+  width: 180px;
   height: 250px;
 }
 .container-card .container-card-centro .img-prod-centro {
@@ -358,6 +358,16 @@
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 678px) and (max-width: 992px) {
+  .secciones .card-lateral:hover {
+    width: 180px !important;
+    height: 220px !important;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 200px !important;
+    height: 220px !important;
+  }
+}
 @media only screen and (min-width: 480px) and (max-width: 992px) {
   .secciones {
     flex-direction: column;
@@ -395,6 +405,7 @@
     display: flex;
     align-items: center;
     height: 100% !important;
+    flex-direction: column-reverse;
   }
   .seccion-centro .container-card-centro-main {
     display: flex;
@@ -420,7 +431,7 @@
   }
   .seccion-centro .div-seccion-name-centro {
     height: 14%;
-    order: -1;
+    order: 1 !important;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -500,6 +511,130 @@
   }
   .seccion-centro .container-card-centro .info-prod h4 {
     font-size: 12px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1120px) {
+  .secciones .card-lateral:hover {
+    width: 180px !important;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 180px !important;
+  }
+  .secciones .container-card .container-card-centro:hover {
+    width: 115px !important;
+  }
+  .secciones .container-card .info-prod h3, .secciones .container-card .info-prod h4 {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (min-width: 678px) and (max-width: 992px) {
+  .secciones .card-lateral:hover {
+    width: 180px !important;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 180px !important;
+  }
+  .seccion-centro .container-card-centro {
+    width: 30%;
+  }
+  .seccion-centro .container-card-centro:hover {
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 678px) {
+  .secciones .card-lateral:hover {
+    width: 145px !important;
+    height: 220px !important;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 145px !important;
+    height: 220px !important;
+  }
+  .seccion-centro .container-card-centro {
+    width: 30%;
+  }
+  .seccion-centro .container-card-centro:hover {
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+  .secciones .card-lateral {
+    width: 22%;
+  }
+  .secciones .card-lateral:hover {
+    width: 114px !important;
+    height: 220px !important;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 114px !important;
+    height: 220px !important;
+  }
+  .seccion-centro .container-card-centro {
+    width: 30%;
+  }
+  .seccion-centro .container-card-centro:hover {
+    width: 145px;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 375px) {
+  .secciones .card-lateral {
+    width: 22%;
+  }
+  .secciones .card-lateral:hover {
+    width: 125px !important;
+    height: 150px !important;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 125px !important;
+    height: 140px !important;
+  }
+  .seccion-centro .container-card-centro {
+    width: 35%;
+  }
+  .seccion-centro .container-card-centro:hover {
+    width: 110px !important;
+    height: 170px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  .secciones .card-lateral {
+    width: 22%;
+  }
+  .secciones .card-lateral:hover {
+    width: 135px !important;
+    height: 150px !important;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 135px !important;
+    height: 140px !important;
+  }
+  .seccion-centro .container-card-centro {
+    width: 35%;
+  }
+  .seccion-centro .container-card-centro:hover {
+    width: 125px !important;
+    height: 170px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 350px) {
+  .secciones .card-lateral {
+    width: 22%;
+  }
+  .secciones .card-lateral:hover {
+    width: 116px !important;
+    height: 150px !important;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 116px !important;
+    height: 140px !important;
+  }
+  .seccion-centro .container-card-centro {
+    width: 35%;
+  }
+  .seccion-centro .container-card-centro:hover {
+    width: 110px;
+    height: 170px;
   }
 }
 .pie-pag {
