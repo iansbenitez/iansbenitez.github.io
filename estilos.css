@@ -559,7 +559,7 @@
 }
 @media only screen and (min-width: 480px) and (max-width: 575px) {
   .secciones .card-lateral {
-    width: 22% !important;
+    width: 2% !important;
   }
   .secciones .card-lateral:hover {
     width: 120px !important;
