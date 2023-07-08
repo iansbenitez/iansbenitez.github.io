@@ -640,6 +640,64 @@
     height: 160px;
   }
 }
+@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 374px) and (max-width: 376px) {
+  .secciones .card-lateral {
+    width: 25% !important;
+    height: 38% !important;
+  }
+  .secciones .card-lateral:hover {
+    width: 90px !important;
+  }
+  .secciones .div-izq-2 .card-lateral {
+    width: 25%;
+    height: 38%;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 90px !important;
+  }
+  .seccion-centro .container-card-centro:hover {
+    height: 110px !important;
+  }
+}
+@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 390px) and (max-width: 412px) {
+  .secciones .div-der .card-lateral {
+    width: 25% !important;
+    height: 38% !important;
+  }
+  .secciones .div-der .card-lateral:hover {
+    width: 90px !important;
+    height: 200px !important;
+  }
+  .secciones .div-izq-2 .card-lateral {
+    width: 25% !important;
+    height: 38% !important;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 90px !important;
+    height: 200px !important;
+  }
+}
+@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 360px) and (max-width: 361px) {
+  .secciones .div-der .card-lateral {
+    width: 23% !important;
+    height: 38% !important;
+  }
+  .secciones .div-der .card-lateral:hover {
+    width: 90px !important;
+    height: 180px !important;
+  }
+  .secciones .div-izq-2 .card-lateral {
+    width: 25% !important;
+    height: 36% !important;
+  }
+  .secciones .div-izq-2 .card-lateral:hover {
+    width: 90px !important;
+    height: 160px !important;
+  }
+  .seccion-centro .container-card-centro:hover {
+    height: 130px !important;
+  }
+}
 .pie-pag {
   display: flex;
   flex-direction: column;
@@ -968,6 +1026,21 @@ html, body {
 @media only screen and (max-width: 480px) {
   #desod-piso {
     font-size: 12px !important;
+  }
+}
+@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 374px) and (max-width: 376px) {
+  #desod-piso {
+    font-size: 9px !important;
+  }
+}
+@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 390px) and (max-width: 390px) {
+  #desod-piso {
+    font-size: 9px !important;
+  }
+}
+@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 360px) and (max-width: 361px) {
+  #desod-piso {
+    font-size: 8px !important;
   }
 }
 
