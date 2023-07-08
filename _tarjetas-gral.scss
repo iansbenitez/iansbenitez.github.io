@@ -14,6 +14,7 @@
     span {
         color: red !important;
         text-transform: uppercase;
+        
     }
 
     .div-seccion-name {
@@ -273,7 +274,7 @@
             height: 85%;
 
             .card-lateral {
-
+                
             .info-prod {
                 h3 {
                     font-size: 15px !important;
@@ -579,8 +580,6 @@
 @media only screen and (min-width: 480px) and (max-width: 575px) {
     .secciones {
         .card-lateral{
-
-            width: 22% !important;
             &:hover {
                 width: 120px !important;
                 height: 205px !important;
@@ -656,7 +655,8 @@
             }
             }
         .div-izq-2 {
-            .card-lateral {
+            .card-lateral { 
+                width: 34%;
                 &:hover {
                     width: 135px !important;
                     height: 140px !important;
