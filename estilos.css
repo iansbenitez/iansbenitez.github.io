@@ -558,9 +558,6 @@
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 575px) {
-  .secciones .card-lateral {
-    width: 22% !important;
-  }
   .secciones .card-lateral:hover {
     width: 120px !important;
     height: 205px !important;
@@ -607,6 +604,9 @@
   .secciones .card-lateral:hover {
     width: 135px !important;
     height: 150px !important;
+  }
+  .secciones .div-izq-2 .card-lateral {
+    width: 34%;
   }
   .secciones .div-izq-2 .card-lateral:hover {
     width: 135px !important;
