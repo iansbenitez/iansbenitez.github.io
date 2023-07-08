@@ -710,3 +710,106 @@
         }
     }
 }
+
+@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 374px) and (max-width: 376px) {
+    .secciones {
+            .card-lateral {
+                width: 25% !important;
+                height: 38% !important;
+
+                &:hover {
+                    width: 90px !important;
+                }
+            }
+        
+
+        .div-izq-2 {
+            .card-lateral {
+                width: 25%;
+                height: 38%;
+
+                &:hover {
+                    width: 90px !important;
+                }
+            }
+        }
+    }
+
+
+    .seccion-centro {
+        .container-card-centro {
+            &:hover {
+                height: 110px !important;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 390px) and (max-width: 412px) {
+    .secciones {
+        .div-der {
+            .card-lateral {
+                width: 25% !important;
+                height: 38% !important;
+
+                &:hover {
+                    width: 90px !important;
+                    height: 200px !important;
+                }
+            }
+        }
+
+        .div-izq-2 {
+            .card-lateral {
+                width: 25% !important;
+                height: 38% !important;
+    
+                &:hover {
+                    width: 90px !important;
+                    height: 200px !important;
+                }
+            }
+        }
+    }
+
+    
+
+}
+
+@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 360px) and (max-width: 361px) {
+    .secciones {
+        .div-der {
+            .card-lateral {
+                width: 23% !important;
+                height: 38% !important;
+
+                &:hover {
+                    width: 90px !important;
+                    height: 180px !important;
+                }
+            }
+        }
+
+        .div-izq-2 {
+            .card-lateral {
+                width: 25% !important;
+                height: 36% !important;
+    
+                &:hover {
+                    width: 90px !important;
+                    height: 160px !important;
+                }
+            }
+        }
+    }
+
+    .seccion-centro {
+        .container-card-centro {
+            &:hover {
+                height: 130px !important;
+            }
+        }
+    }
+}
+
