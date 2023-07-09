@@ -297,31 +297,20 @@ html, body {
     }
 }
 
-@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 374px) and (max-width: 376px) {
+
+@media only screen and (min-height: 666px) and (max-height: 720px)  {
     #desod-piso {
         font-size: 9px !important;
     }
 }
 
-@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 390px) and (max-width: 390px) {
-    #desod-piso {
-        font-size: 9px !important;
-    }
-}
-
-@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 360px) and (max-width: 361px) {
-    #desod-piso {
-        font-size: 8px !important;
-    }
-}
-
-@media only screen and (min-height:719px) and (max-height: 720px) {
+@media only screen and (min-height:720px) and (max-height: 850px) {
     #desod-piso {
         font-size: 12px !important;
     }
 }
 
-@media only screen and (min-height:850px) and (max-height: 896px) {
+@media only screen and (min-height:850px) and (max-height: 915px) {
     #desod-piso {
         font-size:  10px !important;
     }
