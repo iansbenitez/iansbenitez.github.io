@@ -211,8 +211,8 @@
   transition-duration: 500ms;
 }
 .secciones .div-der .card-lateral:hover {
-  width: 250px;
-  height: 250px;
+  width: 32% !important;
+  height: 42% !important;
 }
 .secciones .div-der .card-lateral .img-prod-lateral {
   width: 55%;
@@ -264,8 +264,8 @@
   transition-duration: 500ms;
 }
 .secciones .div-izq-2 .card-lateral:hover {
-  width: 250px !important;
-  height: 250px;
+  width: 32% !important;
+  height: 42% !important;
 }
 .secciones .div-izq-2 .card-lateral .img-prod-lateral {
   width: 55%;
@@ -358,14 +358,43 @@
   text-transform: uppercase;
 }
 
-@media only screen and (min-width: 678px) and (max-width: 992px) {
-  .secciones .card-lateral:hover {
-    width: 180px !important;
-    height: 220px !important;
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+  .seccion-centro {
+    display: flex;
+    align-items: center;
+    height: 65% !important;
+    flex-direction: column-reverse;
   }
-  .secciones .div-izq-2 .card-lateral:hover {
-    width: 200px !important;
-    height: 200px !important;
+  .seccion-centro .container-card-centro-main {
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    height: 43%;
+  }
+  .seccion-centro .container-card-centro {
+    margin-top: -10px !important;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 90%;
+    align-items: center;
+  }
+  .seccion-centro .container-card-centro:hover {
+    width: 23% !important;
+    height: 93% !important;
+  }
+  .seccion-centro .container-card-centro .img-prod-centro {
+    width: 60%;
+    height: 60%;
+  }
+  .seccion-centro .container-card-centro .info-prod h3 {
+    font-size: 15px !important;
+  }
+  .seccion-centro .container-card-centro .info-prod h4 {
+    font-size: 15px !important;
+  }
+  .seccion-centro .div-seccion-name-centro {
+    height: 14%;
+    order: 1 !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 992px) {
@@ -434,10 +463,59 @@
     order: 1 !important;
   }
 }
+@media only screen and (min-width: 678px) and (max-width: 992px) {
+  .container-card-centro:hover {
+    width: 38% !important;
+    height: 48% !important;
+  }
+  .container-card-centro .img-prod-centro {
+    width: 60%;
+    height: 60%;
+  }
+  .container-card-centro .info-prod h3 {
+    font-size: 15px !important;
+  }
+  .container-card-centro .info-prod h4 {
+    font-size: 15px !important;
+  }
+  .div-seccion-name-centro {
+    height: 14%;
+    order: 1 !important;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 678px) {
+  .secciones .div-der .card-lateral, .secciones .div-izq-2 .card-lateral {
+    width: 25% !important;
+  }
+  .seccion-centro .container-card-centro:hover {
+    width: 40% !important;
+    height: 50% !important;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+  .div-der .card-lateral {
+    width: 25% !important;
+  }
+  .div-der .card-lateral:hover {
+    width: 28% !important;
+  }
+  .div-der .img-prod-lateral, .div-izq-2 .img-prod-lateral {
+    width: 70% !important;
+    height: 50% !important;
+  }
+  .container-card-centro:hover {
+    width: 38% !important;
+    height: 47% !important;
+  }
+  .container-card-centro .img-prod-centro {
+    width: 70% !important;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .secciones {
-    margin-top: 40px !important;
+    margin-top: 10% !important;
     box-shadow: 3px 3px 1px black !important;
+    flex-wrap: wrap;
   }
   .secciones .div-seccion-name {
     height: 10%;
@@ -446,6 +524,7 @@
   }
   .secciones .div-der {
     height: 90%;
+    flex-wrap: wrap;
   }
   .secciones .div-der .card-lateral {
     width: 40%;
@@ -465,6 +544,7 @@
     height: 90%;
     flex-direction: column;
     order: 1 !important;
+    width: 100% !important;
   }
   .secciones .div-izq-2 .card-lateral {
     width: 40%;
@@ -480,8 +560,13 @@
   .secciones .div-izq-2 .card-lateral .info-prod h4 {
     font-size: 13px !important;
   }
+  .secciones .div-der .card-lateral:hover, .secciones .div-izq-2 .card-lateral:hover {
+    width: 43% !important;
+    height: 28% !important;
+  }
   .seccion-centro {
     height: 80% !important;
+    flex-wrap: wrap;
   }
   .seccion-centro .div-seccion-name-centro {
     height: 8%;
@@ -493,14 +578,18 @@
     margin-top: 20px !important;
     display: flex;
     align-items: center;
-    height: 43%;
+    height: 40%;
   }
   .seccion-centro .container-card-centro {
     margin-top: -10px !important;
     flex-wrap: wrap;
-    width: 38%;
-    height: 45%;
+    width: 36%;
+    height: 43%;
     justify-content: space-evenly;
+  }
+  .seccion-centro .container-card-centro:hover {
+    width: 41% !important;
+    height: 50% !important;
   }
   .seccion-centro .container-card-centro .img-prod-centro {
     width: 75%;
@@ -513,189 +602,14 @@
     font-size: 12px !important;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1120px) {
+@media only screen and (min-width: 678px) {
   .secciones .card-lateral:hover {
-    width: 180px !important;
+    width: 32% !important;
+    height: 42% !important;
   }
   .secciones .div-izq-2 .card-lateral:hover {
-    width: 180px !important;
-  }
-  .secciones .container-card .container-card-centro:hover {
-    width: 115px !important;
-  }
-  .secciones .container-card .info-prod h3, .secciones .container-card .info-prod h4 {
-    font-size: 14px !important;
-  }
-}
-@media only screen and (min-width: 678px) and (max-width: 992px) {
-  .secciones .card-lateral:hover {
-    width: 180px !important;
-  }
-  .secciones .div-izq-2 .card-lateral:hover {
-    width: 180px !important;
-  }
-  .seccion-centro .container-card-centro {
-    width: 30%;
-  }
-  .seccion-centro .container-card-centro:hover {
-    height: 200px;
-  }
-}
-@media only screen and (min-width: 575px) and (max-width: 678px) {
-  .secciones .card-lateral:hover {
-    width: 145px !important;
-    height: 220px !important;
-  }
-  .secciones .div-izq-2 .card-lateral:hover {
-    width: 145px !important;
-    height: 210px !important;
-  }
-  .seccion-centro .container-card-centro {
-    width: 30%;
-  }
-  .seccion-centro .container-card-centro:hover {
-    height: 200px;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 575px) {
-  .secciones .card-lateral:hover {
-    width: 120px !important;
-    height: 205px !important;
-  }
-  .secciones .div-izq-2 .card-lateral {
-    width: 25%;
-  }
-  .secciones .div-izq-2 .card-lateral:hover {
-    width: 125px !important;
-    height: 205px !important;
-  }
-  .seccion-centro .container-card-centro {
-    width: 30%;
-  }
-  .seccion-centro .container-card-centro:hover {
-    width: 145px;
-    height: 200px;
-  }
-}
-@media only screen and (min-width: 350px) and (max-width: 375px) {
-  .secciones .card-lateral {
-    width: 22%;
-  }
-  .secciones .card-lateral:hover {
-    width: 125px !important;
-    height: 150px !important;
-  }
-  .secciones .div-izq-2 .card-lateral:hover {
-    width: 125px !important;
-    height: 140px !important;
-  }
-  .seccion-centro .container-card-centro {
-    width: 35%;
-  }
-  .seccion-centro .container-card-centro:hover {
-    width: 110px !important;
-    height: 170px;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 480px) {
-  .secciones .card-lateral {
-    width: 22%;
-  }
-  .secciones .card-lateral:hover {
-    width: 135px !important;
-    height: 150px !important;
-  }
-  .secciones .div-izq-2 .card-lateral {
-    width: 34%;
-  }
-  .secciones .div-izq-2 .card-lateral:hover {
-    width: 135px !important;
-    height: 140px !important;
-  }
-  .seccion-centro .container-card-centro {
-    width: 35%;
-  }
-  .seccion-centro .container-card-centro:hover {
-    width: 125px !important;
-    height: 160px;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 350px) {
-  .secciones .card-lateral {
-    width: 22%;
-  }
-  .secciones .card-lateral:hover {
-    width: 116px !important;
-    height: 150px !important;
-  }
-  .secciones .div-izq-2 .card-lateral:hover {
-    width: 116px !important;
-    height: 140px !important;
-  }
-  .seccion-centro .container-card-centro {
-    width: 35%;
-  }
-  .seccion-centro .container-card-centro:hover {
-    width: 110px;
-    height: 160px;
-  }
-}
-@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 374px) and (max-width: 376px) {
-  .secciones .card-lateral {
-    width: 25% !important;
-    height: 38% !important;
-  }
-  .secciones .card-lateral:hover {
-    width: 90px !important;
-  }
-  .secciones .div-izq-2 .card-lateral {
-    width: 25%;
-    height: 38%;
-  }
-  .secciones .div-izq-2 .card-lateral:hover {
-    width: 90px !important;
-  }
-  .seccion-centro .container-card-centro:hover {
-    height: 110px !important;
-  }
-}
-@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 390px) and (max-width: 412px) {
-  .secciones .div-der .card-lateral {
-    width: 25% !important;
-    height: 38% !important;
-  }
-  .secciones .div-der .card-lateral:hover {
-    width: 90px !important;
-    height: 200px !important;
-  }
-  .secciones .div-izq-2 .card-lateral {
-    width: 25% !important;
-    height: 38% !important;
-  }
-  .secciones .div-izq-2 .card-lateral:hover {
-    width: 90px !important;
-    height: 200px !important;
-  }
-}
-@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 360px) and (max-width: 361px) {
-  .secciones .div-der .card-lateral {
-    width: 23% !important;
-    height: 38% !important;
-  }
-  .secciones .div-der .card-lateral:hover {
-    width: 90px !important;
-    height: 180px !important;
-  }
-  .secciones .div-izq-2 .card-lateral {
-    width: 25% !important;
-    height: 36% !important;
-  }
-  .secciones .div-izq-2 .card-lateral:hover {
-    width: 90px !important;
-    height: 160px !important;
-  }
-  .seccion-centro .container-card-centro:hover {
-    height: 130px !important;
+    width: 32% !important;
+    height: 42% !important;
   }
 }
 .pie-pag {
@@ -751,7 +665,7 @@
   .pie-pag .redes-pie {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: -10% !important;
   }
   .pie-pag .redes-pie ul {
     display: inline !important;
