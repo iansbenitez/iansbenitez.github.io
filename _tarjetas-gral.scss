@@ -49,10 +49,12 @@
             transition-delay: 0.2s;
             transition-duration: 500ms;
 
-            &:hover {
-                width: 250px;
-                height: 250px;
-            }
+            
+                &:hover {
+                    width: 32% !important;
+                    height: 42% !important;
+                }
+            
 
 
             .img-prod-lateral {
@@ -116,8 +118,8 @@
             transition-duration: 500ms;
 
             &:hover {
-                width: 250px !important;
-                height: 250px;
+                width: 32% !important;
+                height: 42% !important;
             }
 
             .img-prod-lateral {
@@ -231,32 +233,65 @@
     }
 
 
+@media only screen and (min-width:992px) and (max-width:1400px) {
+    .seccion-centro {
+        display: flex;
+        align-items: center;
+        height: 65% !important;
+        flex-direction: column-reverse;
+        
 
-@media only screen and (min-width: 678px) and (max-width:992px) {
-    .secciones {
-        .card-lateral{
-            &:hover {
-                width: 180px !important;
-                height: 220px !important;
-            }
+        .container-card-centro-main {
+            display: flex;
+            align-items: center;
+            width: 100% !important;
+            height: 43%;
         }
+            .container-card-centro {
+                margin-top: -10px !important;
+                flex-wrap: wrap;
+                width:20%;
+                height: 90%;
+                align-items: center;
 
-        .div-izq-2 {
-            .card-lateral {
+
                 &:hover {
-                    width: 200px !important;
-                    height: 200px !important;
+                    width: 23% !important;
+                    height: 93% !important;
+                }
+                
+
+                
+
+
+                .img-prod-centro {
+                    width: 60%;
+                    height: 60%;
+                }
+
+                .info-prod {
+                    
+                    h3 {
+                        font-size: 15px !important;
+                    }
+
+                    h4 {
+                        font-size: 15px !important;
+                    }
                 }
             }
 
-       
-        }
+            
 
-        
-            
-            
+        .div-seccion-name-centro {
+            height: 14%;
+            order: 1 !important;
         }
     }
+}
+
+
+
 
 
 
@@ -274,6 +309,7 @@
             height: 85%;
 
             .card-lateral {
+                
                 
             .info-prod {
                 h3 {
@@ -361,13 +397,109 @@
     }
     
     }
+
+    @media only screen and (min-width: 678px) and (max-width: 992px) {
+    
+        .container-card-centro {
+            
+
+
+            &:hover {
+                width: 38% !important;
+                height: 48% !important;
+            }
+            
+
+            
+
+
+            .img-prod-centro {
+                width: 60%;
+                height: 60%;
+            }
+
+            .info-prod {
+                
+                h3 {
+                    font-size: 15px !important;
+                }
+
+                h4 {
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+        
+
+    .div-seccion-name-centro {
+        height: 14%;
+        order: 1 !important;
+    }
+}
+
+@media only screen and (min-width: 575px) and (max-width:678px) {
+    .secciones {
+        .div-der, .div-izq-2 {
+            .card-lateral {
+                width: 25% !important;
+            }
+        }
+    }
+
+    .seccion-centro {
+        .container-card-centro {
+            &:hover {
+                width: 40% !important;
+                height: 50% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 575px) {
+    .div-der {
+        .card-lateral {
+            width: 25% !important;
+
+            &:hover {
+                width: 28% !important;
+            }
+
+        }
+    }
+
+    .div-der, .div-izq-2 {
+        .img-prod-lateral {
+            width: 70% !important;
+            height: 50% !important;
+        }
+    }
+
+    .container-card-centro {
+        &:hover {
+            width: 38% !important;
+            height: 47% !important;
+        }
+
+
+        .img-prod-centro {
+            width: 70% !important;
+        }
+    }
+}
+
   
 
 
 @media only screen and (min-width:320px) and (max-width: 480px) {
+    
+
     .secciones {
-        margin-top: 40px !important;
+        margin-top: 10% !important;
         box-shadow: 3px 3px 1px black !important;
+        flex-wrap: wrap;
+        
 
         .div-seccion-name {
             height: 10%;
@@ -376,11 +508,15 @@
         }
 
         .div-der {
+            
             height: 90%;
+            flex-wrap: wrap;
 
             .card-lateral {
                 width: 40%;
                 height: 25%;
+
+                
 
                 .img-prod-lateral {
                     width: 75%;
@@ -403,6 +539,8 @@
             height: 90%;
             flex-direction: column;
             order: 1 !important;
+            width: 100% !important;
+            
             
 
             .card-lateral {
@@ -426,11 +564,23 @@
             }
         }
 
+        .div-der, .div-izq-2 {
+
+            .card-lateral{
+                &:hover {
+                    width: 43% !important;
+                    height: 28% !important;
+                }
+            }
+            
+        }
+
         
 }
 
 .seccion-centro {
             height: 80% !important;
+            flex-wrap: wrap;
 
     .div-seccion-name-centro {
         height: 8%;
@@ -444,14 +594,19 @@
         display: flex;
         align-items: center;
         
-        height: 43%;
+        height: 40%;
     }
         .container-card-centro {
             margin-top: -10px !important;
             flex-wrap: wrap;
-            width: 38%;
-            height: 45%;
+            width: 36%;
+            height: 43%;
             justify-content: space-evenly;
+
+            &:hover {
+                width: 41% !important;
+                height: 50% !important;
+            }
             
 
 
@@ -477,339 +632,38 @@
 
 }
 
-@media only screen and (min-width: 992px) and (max-width:1120px){
+@media only screen and (min-width: 678px) {
     .secciones {
         .card-lateral {
             &:hover {
-                width: 180px !important;
+                width: 32% !important;
+                height: 42% !important;
             }
             }
         .div-izq-2 {
             .card-lateral {
                 &:hover {
-                    width: 180px !important;
+                    width: 32% !important;
+                    height: 42% !important;
                 }
         }
         }
 
-        .container-card {
-            .container-card-centro {
-                &:hover {
-                    width: 115px !important;
-                }
-            }
-
-            .info-prod {
-                h3, h4 {
-                    font-size: 14px !important;
-                }
-
-            }      
         
-    }
 }
 
     
 }
 
-@media only screen and (min-width: 678px) and (max-width: 992px) {
-    
-
-    .secciones {
-        .card-lateral{
-            &:hover {
-                width: 180px !important;
-            }
-            }
-        .div-izq-2 {
-            .card-lateral {
-                &:hover {
-                    width: 180px !important;
-                }
-            }
-        }
-        
-    }
 
 
 
-    .seccion-centro {
-        .container-card-centro {
-            width: 30%;
-            &:hover {
-                height: 200px;
-            }
-        }
-    }
-}
-    
-
-
-@media only screen and (min-width: 575px) and (max-width: 678px) {
-    .secciones {
-        .card-lateral{
-            &:hover {
-                width: 145px !important;
-                height: 220px !important;
-            }
-            }
-        .div-izq-2 {
-            .card-lateral {
-                &:hover {
-                    width: 145px !important;
-                    height: 210px !important;
-                }
-            }
-        }
-        
-    }
 
 
 
-    .seccion-centro {
-        .container-card-centro {
-            width: 30%;
-            &:hover {
-                height: 200px;
-            }
-        }
-    }
-
-}
-
-@media only screen and (min-width: 480px) and (max-width: 575px) {
-    .secciones {
-        .card-lateral{
-            &:hover {
-                width: 120px !important;
-                height: 205px !important;
-            }
-            }
-        .div-izq-2 {
-            .card-lateral {
-                width: 25%;
-                &:hover {
-                    width: 125px !important;
-                    height: 205px !important;
-                }
-            }
-        }
-        
-    }
 
 
 
-    .seccion-centro {
-        .container-card-centro {
-            width: 30%;
-            &:hover {
-                width: 145px;
-                height: 200px;
-            }
-        }
-    }
-}
 
 
-@media only screen and (min-width: 350px) and (max-width: 375px) {
-    
-    .secciones {
-        .card-lateral{
-
-            width: 22%;
-            &:hover {
-                width: 125px !important;
-                height: 150px !important;
-            }
-            }
-        .div-izq-2 {
-            .card-lateral {
-                &:hover {
-                    width: 125px !important;
-                    height: 140px !important;
-                }
-            }
-        }
-        
-    }
-    
-    .seccion-centro {
-        .container-card-centro {
-            width: 35%;
-            &:hover {
-                width: 110px !important;
-                height: 170px;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 375px) and (max-width: 480px) {
-    .secciones {
-        .card-lateral{
-
-            width: 22%;
-            &:hover {
-                width: 135px !important;
-                height: 150px !important;
-            }
-            }
-        .div-izq-2 {
-            .card-lateral { 
-                width: 34%;
-                &:hover {
-                    width: 135px !important;
-                    height: 140px !important;
-                }
-            }
-        }
-        
-    }
-    
-    .seccion-centro {
-        .container-card-centro {
-            width: 35%;
-            &:hover {
-                width: 125px !important;
-                height: 160px;
-            }
-        }
-    }
-}
-
-
-@media only screen and (min-width:320px) and (max-width: 350px) {
-    
-    .secciones {
-        .card-lateral{
-
-            width: 22%;
-            &:hover {
-                width: 116px !important;
-                height: 150px !important;
-            }
-            }
-        .div-izq-2 {
-            .card-lateral {
-                &:hover {
-                    width: 116px !important;
-                    height: 140px !important;
-                }
-            }
-        }
-        
-    }
- 
-    .seccion-centro {
-        .container-card-centro {
-            width: 35%;
-            &:hover {
-                width: 110px;
-                height: 160px;
-            }
-        }
-    }
-}
-
-@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 374px) and (max-width: 376px) {
-    .secciones {
-            .card-lateral {
-                width: 25% !important;
-                height: 38% !important;
-
-                &:hover {
-                    width: 90px !important;
-                }
-            }
-        
-
-        .div-izq-2 {
-            .card-lateral {
-                width: 25%;
-                height: 38%;
-
-                &:hover {
-                    width: 90px !important;
-                }
-            }
-        }
-    }
-
-
-    .seccion-centro {
-        .container-card-centro {
-            &:hover {
-                height: 110px !important;
-            }
-        }
-    }
-}
-
-
-@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 390px) and (max-width: 412px) {
-    .secciones {
-        .div-der {
-            .card-lateral {
-                width: 25% !important;
-                height: 38% !important;
-
-                &:hover {
-                    width: 90px !important;
-                    height: 200px !important;
-                }
-            }
-        }
-
-        .div-izq-2 {
-            .card-lateral {
-                width: 25% !important;
-                height: 38% !important;
-    
-                &:hover {
-                    width: 90px !important;
-                    height: 200px !important;
-                }
-            }
-        }
-    }
-
-    
-
-}
-
-@media only screen and (min-height: 666px) and (max-height: 915px) and (min-width: 360px) and (max-width: 361px) {
-    .secciones {
-        .div-der {
-            .card-lateral {
-                width: 23% !important;
-                height: 38% !important;
-
-                &:hover {
-                    width: 90px !important;
-                    height: 180px !important;
-                }
-            }
-        }
-
-        .div-izq-2 {
-            .card-lateral {
-                width: 25% !important;
-                height: 36% !important;
-    
-                &:hover {
-                    width: 90px !important;
-                    height: 160px !important;
-                }
-            }
-        }
-    }
-
-    .seccion-centro {
-        .container-card-centro {
-            &:hover {
-                height: 130px !important;
-            }
-        }
-    }
-}
 
