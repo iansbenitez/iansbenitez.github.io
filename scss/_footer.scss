@@ -1,8 +1,17 @@
+$colores: (
+    colorPrimario: (black),
+    colorSecundario: (gold),
+    colorTerciario: (white),
+    colorCuatro: (red),
+    bg-color: (bisque)
+); 
+
+
 .pie-pag {
     display: flex;
     flex-direction: column;
     margin-top: 40px !important;
-    background-color: bisque !important;
+    background-color: map-get($colores, bg-color ) !important;
     border-top: 3px solid black;
     height: 25%;
     
@@ -29,11 +38,11 @@
                 a {
                     text-transform: uppercase;
                     text-decoration: none;
-                    color: black;
+                    color: map-get($colores, colorPrimario );
                     
                     &:hover {
-                        color: red;
-                        background-color: gold;
+                        color: map-get($colores, colorCuatro );
+                        background-color: map-get($colores, colorSecundario );
                         border-radius: 50px;
                     }
                 }
