@@ -1,0 +1,300 @@
+@use 'header';
+@use 'tarjetas-gral';
+@use 'footer';
+
+
+// general //
+
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: clip !important;
+}
+
+
+
+
+// boton flotante arrow up//
+
+.contenedor-boton {
+    height: 10%;
+    position: sticky;
+    float: right;
+    padding: 10px;
+    top: 90%;
+
+    
+    img {
+        width: 80px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    .contenedor-boton {
+        padding-right: 10px !important;
+
+        img {
+            width: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .contenedor-boton {
+        padding-right: 5px !important;
+
+        img {
+            width: 45px !important;
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+    .contenedor-boton {
+        img {
+            width: 35px !important;
+        }
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width: 480px) {
+    .contenedor-boton {
+        padding-right: 2px !important;
+        
+    }
+
+    img {
+        width: 25px !important;
+        
+    }
+}
+
+
+// imagenes seccion productos destacados //
+
+.prod1 {
+    background-image: url(/iansbenitez.github.io/img/leche-entera.webp);
+}
+
+.prod2 {
+    background-image: url(/iansbenitez.github.io/img/roast-beef.jpg);
+}
+
+.prod3 {
+    background-image: url(/iansbenitez.github.io/img/tomate-redondo.jpg);
+}
+
+.prod4 {
+    background-image: url(/iansbenitez.github.io/img/espadol.jpg);
+}
+
+.prod5 {
+    background-image: url(/iansbenitez.github.io/img/lavandina.webp);
+}
+
+.prod6 {
+    background-image: url(/iansbenitez.github.io/img/pan-flauta.webp);
+}
+
+
+// imagenes almacen //
+
+
+.prod2b {
+    background-image: url(/iansbenitez.github.io/img/lata-atun.webp);
+}
+
+.prod3b {
+    background-image: url(/iansbenitez.github.io/img/oreo.jpg);
+}
+
+.prod4b {
+    background-image: url(/iansbenitez.github.io/img/crema-leche.jpg);
+}
+
+.prod5b {
+    background-image: url(/iansbenitez.github.io/img/azucar.webp);
+}
+
+.prod6b {
+    background-image: url(/iansbenitez.github.io/img/aceite-natura.jpg);
+}
+
+
+
+// imagenes carniceria //
+
+#carniceria {
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.prod2c {
+    background-image: url(/iansbenitez.github.io/img/asado.webp);
+}
+
+.prod3c {
+    background-image: url(/iansbenitez.github.io/img/bife-angosto.jpg);
+}
+
+.prod4c {
+    background-image: url(/iansbenitez.github.io/img/vacio.jpg);
+}
+
+.prod5c {
+    background-image: url(/iansbenitez.github.io/img/chorizo.webp);
+}
+
+.prod6c {
+    background-image: url(/iansbenitez.github.io/img/morcilla.jpg);
+}
+
+
+.prod7c {
+    background-image: url(/iansbenitez.github.io/img/chinchulin.jpg);
+}
+
+.prod8c {
+    background-image: url(/iansbenitez.github.io/img/provoleta.png);
+}
+
+
+
+// imagenes verduleria //
+
+#verduleria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prod2d {
+    background-image: url(/iansbenitez.github.io/img/criolla.webp);
+}
+
+.prod3d {
+    background-image: url(/iansbenitez.github.io/img/zanahoria.jpg);
+}
+
+.prod4d {
+    background-image: url(/iansbenitez.github.io/img/zapallitos.jpg);
+}
+
+.prod5d {
+    background-image: url(/iansbenitez.github.io/img/morron-rojo.png);
+}
+
+.prod6d {
+    background-image: url(/iansbenitez.github.io/img/papa-negra.webp);
+}
+
+
+
+//imagenes panaderia //
+
+#panaderia {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prod2f {
+    background-image: url(/iansbenitez.github.io/img/facturas.jpg);
+}
+
+.prod3f {
+    background-image: url(/iansbenitez.github.io/img/mini-torta.jpg);
+}
+
+
+.prod4f {
+    background-image: url(/iansbenitez.github.io/img/masitas.jpg);
+}
+
+.prod5f {
+    background-image: url(/iansbenitez.github.io/img/sanguchito.miga.jpg);
+}
+
+.prod6f {
+    background-image: url(/iansbenitez.github.io/img/pepas.webp);
+}
+
+
+
+
+// imagenes limpieza //
+
+#limpieza {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.prod2e {
+    background-image: url(/iansbenitez.github.io/img/jabon-liquido.webp);
+}
+
+.prod3e {
+    background-image: url(/iansbenitez.github.io/img/desodorante-depiso.webp);
+}
+
+
+.prod4e {
+    background-image: url(/iansbenitez.github.io/img/cera-piso.webp);
+}
+
+.prod5e {
+    background-image: url(/iansbenitez.github.io/img/suavizante-ropa.webp.webp);
+}
+
+
+.prod6e {
+    background-image: url(/iansbenitez.github.io/img/lysoform.png);
+}
+
+.prod7e {
+    background-image: url(/iansbenitez.github.io/img/higienico.webp);
+}
+
+.prod8e {
+    background-image: url(/iansbenitez.github.io/img/trapo-piso.jpg);
+}
+
+
+
+
+
+#desod-piso {
+    font-size: 15px !important;
+    color: white !important;
+}
+
+@media only screen and (max-width: 480px) {
+    #desod-piso {
+        font-size: 12px !important;
+    }
+}
+
+
+@media only screen and (min-height: 666px) and (max-height: 720px)  {
+    #desod-piso {
+        font-size: 9px !important;
+    }
+}
+
+@media only screen and (min-height:720px) and (max-height: 850px) {
+    #desod-piso {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (min-height:850px) and (max-height: 915px) {
+    #desod-piso {
+        font-size:  10px !important;
+    }
+}
