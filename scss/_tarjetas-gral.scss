@@ -1,4 +1,10 @@
-@use 'colores';
+$colores: (
+    colorPrimario: (black),
+    colorSecundario: (gold),
+    colorTerciario: (white),
+    colorCuatro: (red),
+    bg-color: (bisque)
+); 
 
 
 .secciones   {
@@ -6,16 +12,18 @@
     flex-direction: row;
     border-radius: 30px;
     height: 60% !important;
-    background-color: map-get($colores, bg-color );
-    border: 2px solid black;
+    background-color:map-get($colores, bg-color);
+    border: 2px solid map-get($colores, colorPrimario );
     margin-top: 4% !important;
-    box-shadow: 10px 10px 5px black;
+
+    margin-bottom: 5% !important;
+    box-shadow: 10px 10px 5px map-get($colores, colorPrimario );
     text-align: center;
     justify-content: space-evenly !important;
     
 
     span {
-        color: red !important;
+        color: map-get($colores, colorCuatro ) !important;
         text-transform: uppercase;
         
     }
@@ -41,16 +49,16 @@
             width: 28%;
             height: 40%;
             margin: 20px 10px !important;
-            background-color: map-get($colores, colorPrimario);
+            background-color: map-get($colores, colorPrimario );
             box-sizing: border-box;
             border-radius: 20px;
-            border: 2px solid map-get($colores, colorCuatro);
+            border: 2px solid map-get($colores, colorTerciario );
             align-items: center;
             justify-content: center;
             padding: 1%;
-            color: map-get($colores, colorCuatro);
+            color: map-get($colores, colorTerciario );
             text-align: center;
-            box-shadow: 8px 8px 10px map-get($colores, colorPrimario);
+            box-shadow: 8px 8px 10px map-get($colores, colorPrimario );
             transition-property: width;
             transition-property: height;
             transition-delay: 0.2s;
@@ -71,7 +79,7 @@
                 border-radius: 10px;
                 background-size: cover;
                 background-position: center;
-                box-shadow: 5px 5px 10px map-get($colores, colorCuatro);
+                box-shadow: 5px 5px 10px map-get($colores, colorTerciario);
                 box-sizing: border-box;
                 background-position: center;
                 background-size: cover;
@@ -111,16 +119,16 @@
             width: 28%;
             height: 40%;
             margin: 20px 10 !important;
-            background-color: black;
+            background-color: map-get($colores, colorPrimario );
             box-sizing: border-box;
             border-radius: 20px;
-            border: 2px solid map-get($colores, colorCuatro);
+            border: 2px solid map-get($colores, colorTerciario );
             align-items: center;
             justify-content: center;
             padding: 1%;
-            color: map-get($colores, colorCuatro);
+            color: map-get($colores, colorTerciario );
             text-align: center;
-            box-shadow: 8px 8px 10px map-get($colores, colorPrimario);
+            box-shadow: 8px 8px 10px map-get($colores, colorPrimario );
             transition-property: width;
             transition-property: height;
             transition-delay: 0.2s;
@@ -138,7 +146,7 @@
                 border-radius: 10px;
                 background-size: cover;
                 background-position: center;
-                box-shadow: 5px 5px 10px white;
+                box-shadow: 5px 5px 10px map-get($colores, colorTerciario);
                 box-sizing: border-box;
                 background-position: center;
                 background-size: cover;
@@ -196,16 +204,16 @@
             width: 35%;
             height: 40% !important;
             margin: 20px 15px !important;
-            background-color: black;
+            background-color: map-get($colores, colorPrimario );
             box-sizing: border-box;
             border-radius: 20px;
-            border: 2px solid white;
+            border: 2px solid map-get($colores, colorTerciario );
             align-items: center;
             justify-content: center;
             padding: 1%;
-            color: white;
+            color: map-get($colores, colorTerciario);
             text-align: center;
-            box-shadow: 8px 8px 10px black;
+            box-shadow: 8px 8px 10px map-get($colores, colorPrimario );
             transition-property: width;
             transition-property: height;
             transition-delay: 0.2s;
@@ -224,7 +232,7 @@
                 border-radius: 10px;
                 background-size: cover;
                 background-position: center;
-                box-shadow: 5px 5px 10px white;
+                box-shadow: 5px 5px 10px map-get($colores, colorTerciario );
                 box-sizing: border-box;
                 background-position: center;
                 background-size: cover;
@@ -520,7 +528,7 @@
 
     .secciones {
         margin-top: 10% !important;
-        box-shadow: 3px 3px 1px black !important;
+        box-shadow: 3px 3px 1px map-get($colores, colorPrimario ) !important;
         flex-wrap: wrap;
         
 
