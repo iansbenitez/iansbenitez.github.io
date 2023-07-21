@@ -845,8 +845,49 @@ html, body {
   width: 80px;
 }
 
-.carousel {
-  height: 70%;
+.subtitulo__carrusel, .subtitulo__ubicacion {
+  border-top: 5px solid red;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px 0 !important;
+  color: red;
+  font-family: "Agdasima", sans-serif;
+  font-size: 30px;
+}
+
+#carouselExampleCaptions {
+  height: 70% !important;
+}
+#carouselExampleCaptions h5, #carouselExampleCaptions p {
+  color: black;
+  background-color: white;
+}
+
+.accordion {
+  margin: 10% 0 !important;
+}
+.accordion .accordion-item {
+  border: 2px solid red;
+  margin: 5px 0 !important;
+}
+.accordion .accordion-item h2 button {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 992px) {
@@ -883,8 +924,11 @@ html, body {
   img {
     width: 25px !important;
   }
-  .carousel {
-    height: 30%;
+  #carouselExampleCaptions {
+    height: 30% !important;
+  }
+  .subtitulo__carrusel {
+    font-size: 20px;
   }
 }
 .prod1 {
