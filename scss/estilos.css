@@ -856,7 +856,9 @@ html, body {
 }
 
 #carouselExampleCaptions {
-  height: 70% !important;
+  display: flex;
+  align-items: center;
+  height: 80% !important;
 }
 #carouselExampleCaptions h5, #carouselExampleCaptions p {
   color: black;
